@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+
+    <TextView
+        android:id="@+id/Balancifiertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balancifier"
+        android:paddingLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@color/Blue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:fontFamily="cursive"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transactions"
+            android:textSize="20dp"
+            android:background="@color/Blue"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="cursive"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="70dp" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            app:fab_icon="@drawable/baseline_add_24"
+            app:fab_size="normal"
+            app:fab_colorNormal="@color/Blue"
+            app:fab_colorPressed="@color/Blue"/>
+
+        <!--<com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            app:fab_expandDirection="up"
+            app:fab_addButtonColorNormal="@color/Blue"
+            app:fab_addButtonColorPressed="#1352A5"
+            app:fab_addButtonPlusIconColor="@color/white"
+
+            app:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="#ECE6E6"
+                android:id="@+id/addincome"
+                app:fab_icon="@drawable/baseline_attach_money_24"
+                app:fab_size="mini"
+                app:fab_title="Add income"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#fff"
+                android:id="@+id/addexpense"
+                app:fab_icon="@drawable/baseline_attach_money_24"
+                app:fab_size="mini"
+                app:fab_title="Add income"/>
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
